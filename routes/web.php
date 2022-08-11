@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ArticleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +15,4 @@ use App\Http\Controllers\PageController;
 */
 
 Route::get('/', [PageController::class, 'about']);
+Route::get('/articles', [ArticleController::class, 'index'])->name('acticles.index');
