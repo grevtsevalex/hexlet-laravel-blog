@@ -15,4 +15,9 @@ use App\Http\Controllers\ArticleController;
 */
 
 Route::get('/', [PageController::class, 'about']);
+
 Route::get('/articles', [ArticleController::class, 'index'])->name('acticles.index');
+
+Route::get('/articles/{id}', [ArticleController::class, 'show'])->name('articles.show');
+
+

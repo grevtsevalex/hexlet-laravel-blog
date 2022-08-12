@@ -1,7 +1,7 @@
 @extends('layouts.app')
 	@section('content')
                 @foreach ($articles as $article)
-                        <h2>{{$article->name}}</h2>
+                        <a href="/articles/{{ $article->id }}"><h2>{{$article->name}}</h2></a>
                         <p>{{$article->body}}</p>
                 @endforeach
         @endsection
