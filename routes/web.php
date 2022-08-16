@@ -26,4 +26,6 @@ Route::post('/articles', [ArticleController::class, 'store'])->name('articles.st
 
 Route::get('/articles/{id}/edit', [ArticleController::class, 'edit'])->name('articles.edit');
 
+Route::delete('/articles/{id}', [ArticleController::class, 'delete'])->name('articles.delete');
+
 Route::patch('/articles/{id}', [ArticleController::class, 'update'])->name('articles.update');

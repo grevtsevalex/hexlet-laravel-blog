@@ -9,5 +9,8 @@
   		<section>
     			<p>{{ $article->body }}</p>
   		</section>
+		{{Form::open(array('url' => "articles/{$article->id}", 'method' => 'delete'))}}
+		{{Form::submit('Удалить')}}
+		{{Form::close()}}	
 	</article>
 @endsection
